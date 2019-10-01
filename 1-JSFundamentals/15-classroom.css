@@ -1,0 +1,36 @@
+.border {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: grey;
+    text-align: center
+}
+
+h1 {
+    color: lightgreen;
+    text-align: center;
+}
+
+h3 {
+    color: blue;
+}
+
+p {
+    color: red;
+}
+
+.miniBorder {
+    border: .5px solid black;
+    border-radius: 1em;
+    background-color: lightgray;
+    text-align: center;
+    width: 33%;
+    display: inline-block;
+}
+
+#movies {
+    background-color: skyblue;
+    border: 1px solid black;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
