@@ -14,8 +14,9 @@ console.log(`Hello ${name}, how are you today?`)
 
 let food = ['Pecan Pie', 'Shrimp', 'Quesadilla', 'Cheese Cake', 'Hotdog'];
 
-food.push('Cool Beans');
-food.splice(1, 1, 'Cookies')
+// food.push('Cool Beans');
+food.splice(1, 1, 'Cookies') 
+console.log(food)
         //Position, how many to remove, what to add
 food.shift()
 food.pop()

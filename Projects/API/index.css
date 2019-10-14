@@ -1,0 +1,9 @@
+body {
+    background-image: url(./Assets_API/API_bg.jpg);
+}
+
+#center {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}

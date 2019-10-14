@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <label for="nameInput">Enter Your Name:</label>
+    <input type="text" id="nameInput" placeholder="John Smith" />
+    
+    <p>Welcome!</p>
+    <p>No name has been entered</p>
+
+    <script type="text/javascript">  
+    console.log(document.querySelectorAll("p.sampleClass"))
+
+    document.getElementById('nameInput').addEventListener('keyup', (event) => {
+        if (event.target.value === '') {
+            document.getElementsByTagName("p")[1].innerText = `No name has been entered`;
+        } else {
+            document.getElementsByTagName("p")[1].innerText = `Everyone please welcome ${event.target.value} to the stage.`;
+        }
+        });
+    </script>
+</body>
+</html>
