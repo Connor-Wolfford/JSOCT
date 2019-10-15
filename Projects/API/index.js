@@ -11,15 +11,16 @@ function portalActivate () {
 
 fetch(baseURL)
     .then(function(result) {
-        console.log(result)
+        // console.log(result)
         return result.json();
     }).then(function(json) {
-        console.log(json);
+        // console.log(json);
         character(json);
     });
 }
 
 function character (json) {
-    console.log(json.results);
+    console.log(json.results[0]);
     
+    let chars = json.results
 }
