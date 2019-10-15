@@ -31,7 +31,7 @@ function character (json) {
     let article = document.createElement('article')
     let clearfix = document.createElement('div')
 
-    let chars = json.results[0]
+    let chars = json.results[Math.floor(Math.random()*11)]
 
     name.innerHTML = chars.name
     para.innerHTML = chars.status
