@@ -35,14 +35,15 @@ function character (json) {
 
     name.innerHTML = chars.name
     para.innerHTML = chars.status
-    img.innerHTML = chars.image
+    img.src = chars.image
 
 
 
     console.log('Character:', chars)
 
+    clearfix.appendChild(article)
     article.appendChild(name)
     article.appendChild(img)
     article.appendChild(para)
-    section.appendChild(article)
+    section.appendChild(clearfix)
 }
