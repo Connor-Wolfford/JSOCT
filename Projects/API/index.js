@@ -23,6 +23,7 @@ fetch(baseURL)
     });
 }
 
+//Function that creates and display HTML elements using DOM manipulation
 function character (json) {
     // console.log(json.results[0]);
     let name = document.createElement('h2')
@@ -31,10 +32,11 @@ function character (json) {
     let article = document.createElement('article')
     let clearfix = document.createElement('div')
 
-    let chars = json.results[Math.floor(Math.random()*11)]
+    //This sets a variable from a random character from the JSON using [] and a little math
+    let chars = json.results[Math.floor(Math.random()*20)]
 
     name.innerHTML = chars.name
-    para.innerHTML = chars.status
+    para.innerHTML = chars.status + '!'
     img.src = chars.image
 
 
